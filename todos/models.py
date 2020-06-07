@@ -1,10 +1,11 @@
 from django.db import models
+import datetime
 
 
 class Todo(models.Model):
     todo = models.CharField(max_length=100)
     isFinished = models.BooleanField(default=False)
-    untilWhen = models.DateTimeField(auto_now_add=True)
+    untilWhen = models.DateTimeField(default=datetime.datetime.now())
 
     class Meta:
         ordering = ['untilWhen']
