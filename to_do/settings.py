@@ -25,7 +25,10 @@ SECRET_KEY = 'wbu@5w1y#f6=vpdrt3zt&7+j3a*ofg*!-8a3r$_lvf)11hdd8f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    '192.168.99.100', # VM_IP_ADDRESS
+]
 
 
 # Application definition
